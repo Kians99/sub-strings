@@ -6,9 +6,7 @@ end
 def break_down(query, length)
   x = ""
   subsets = Array.new(0)
-  sum = 0
     for i in 0..(query.length - 1) do
-      sum = sum + 1
       if i + length - 1 < query.length
         for j in i..i + length - 1 do
           x += query[j]
